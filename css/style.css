@@ -1,0 +1,135 @@
+/* custom font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+/* color */
+:root {
+  --main-color: #264653;
+  --secondary-color: #3f87f5;
+}
+
+/* common tag */
+
+.common-class-0 {
+  min-height: 800px;
+}
+.common-class-1 {
+  min-height: 500px;
+}
+
+/* nav bar part */
+
+.navbar-toggler-icon{
+  background-image: url("../icons/menu.svg") !important;
+}
+
+/* carousel slider section */
+
+.carousel-item:nth-child(1) img {
+  background-image: url("../images/banner-1.jpg");
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  opacity: 0.7;
+}
+.carousel-item:nth-child(2) img {
+  background-image: url("../images/banner-2.jpg");
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  opacity: 0.7;
+}
+.carousel-item:nth-child(3) img {
+  background-image: url("../images/banner-3.jpeg");
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.carousel .carousel-control-prev-icon {
+  /* change fill="currentColor" to %23fff to make it white  */
+  background-image: url('data:image/svg+xml,<svg width="24px" height="24px" viewBox="0 0 24 24" id="736d2dce-205b-4e1d-a8de-21d9524ba21c" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg"><g id="6037caba-d996-4e01-a295-2e233316e41b" data-name="Arrow Left"><path d="M16.23,23.58l2.24-2a0.5,0.5,0,0,0,0-.71L10.57,12,18.5,3.13a0.5,0.5,0,0,0,0-.71l-2.24-2a0.5,0.5,0,0,0-.71,0L5.2,12,15.52,23.54A0.5,0.5,0,0,0,16.23,23.58Z"/></g></svg>');
+}
+
+.carousel .carousel-control-next-icon {
+  /* change fill="currentColor" to %23fff to make it white  */
+  background-image: url('data:image/svg+xml,<svg width="24px" height="24px" viewBox="0 0 24 24" id="fa26cff6-f100-48f4-a81c-6e0cb8b1ea4a" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg"><g id="880b5b52-5578-436c-a64a-10a281e56ea6" data-name="Arrow Left"><path d="M7.77,23.58l-2.24-2a0.5,0.5,0,0,1,0-.71L13.43,12,5.5,3.13a0.5,0.5,0,0,1,0-.71l2.24-2a0.5,0.5,0,0,1,.71,0L18.8,12,8.48,23.54A0.5,0.5,0,0,1,7.77,23.58Z"/></g></svg>');
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  /* Use to adjust size of icons */
+  width: 3rem;
+  height: 3rem;
+}
+
+/* packages part */
+.card{
+  box-shadow: 2px 2px 10px rgb(218, 217, 217);
+  /* filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06)); */
+  border-radius: 15px !important;
+}
+
+.special-tag {
+  border-radius: 15px;
+  margin-top: -25px;
+}
+
+.fa-check-circle {
+  color: #5243c2;
+}
+
+.white{
+  color: #fff;
+}
+
+.fashion-image img{
+  border-radius: 20px;
+}
+
+/* contact part */
+#contact {
+  background: var(--main-color);
+  padding: 50px;
+  color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+/* footer part */
+.footer {
+  background: black;
+  padding: 10px;
+}
+.footer-span span {
+  margin-right: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.designer a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.designer a:hover{
+  font-weight: 800;
+  color: #fff;
+}
+
+@media (max-width: 390px) {
+   .card{
+     margin-bottom: 3rem;
+   }
+}
+@media (max-width: 768px) {
+  .reverse-main {
+      order: 1;
+  }  
+}
